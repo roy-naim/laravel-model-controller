@@ -10,7 +10,10 @@
     <body>
       @foreach ($movies as $movie)
       <h1>{{$movie->title}}</h1>
+      <h2>{{$movie->original_title}}</h2>
       <h3>{{$movie->nationality}}</h3>
+      <p>{{$movie->date}}</p>
+      <p>{{$movie->vote}}</p>
       @endforeach
     </body>
 </html>
